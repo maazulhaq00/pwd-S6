@@ -8,29 +8,34 @@
 </head>
 
 <body>
-    <form>
-        <label for="fullname">Full Name</label>
-        <input type="text" placeholder="Enter your name here" name="fullname" id="fullname" /> <br>
+    <!-- <form autocomplete="off" action="23-form2.html" method="post" name="students-details" target="_blank"> -->
+    <form >
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name</label>
+            <input type="text" placeholder="Enter your name here" name="fullname" id="fullname" minlength="2" maxlength="15"  size="3"/> <br>
 
-        <label for="age">Age</label>
-        <input type="number" placeholder="Enter your age here" name="age" id="age" /> <br>
+            <label for="age">Age</label>
+            <input type="number" placeholder="Enter your age here" name="age" id="age" min="0" max="100" step="5" /> <br>
 
+            <p>Select Gender</p>
+
+            <label>
+                <input type="radio" name="gender" value="m" /> Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="f" /> Female
+            </label>
+        </fieldset>
+        <br>
         <label for="email">Email</label>
-        <input type="email" placeholder="Enter your email here" name="email" id="email" /> <br>
+        <input type="email" placeholder="Enter your email here" name="email" id="email" value="default@gamil.com" disabled /> <br>
 
         <label>
             Contact number
             <input type="number" name="contact">
-        </label> 
-
-        <p>Select Gender</p>
-
-        <label>
-            <input type="radio" name="gender" value="m" /> Male
         </label>
-        <label>
-            <input type="radio" name="gender" value="f" /> Female
-        </label>
+
 
         <p>Choose Hobbies</p>
 
@@ -38,7 +43,7 @@
             <input type="checkbox" name="hobby1" value="Reading"> Reading
         </label>
         <label>
-            <input type="checkbox" name="hobby2" value="Writing"> Writing
+            <input type="checkbox" name="hobby2" value="Writing" checked> Writing
         </label>
         <label>
             <input type="checkbox" name="hobby3" value="Mobile Games"> Mobile Games
@@ -62,7 +67,7 @@
             <textarea name="message" cols="30" rows="4">Hello World</textarea>
         </label><br>
 
-        <input type="submit" value="SUBMIT" >
+        <input type="submit" value="SUBMIT">
 
 
     </form>
