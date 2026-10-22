@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Storm&display=swap" rel="stylesheet">
+
     <style>
         #my-heading {
             /* text-decoration-line: underline overline;
@@ -12,16 +18,67 @@
             text-decoration-thickness: 3px; */
 
             text-decoration: underline overline solid red 5px;
+            text-transform: uppercase;
+
+            /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+            
+            font-family: "Rubik Storm", system-ui;
+            font-weight: 400;
+            font-style: normal;
+
+            font-size: 30px;
+            /* font-style: italic; */
+
+            font-variant: small-caps;
+
         }
 
-        a{
+        a {
             text-decoration: none;
+        }
+
+        #format {
+            letter-spacing: 2px;
+            line-height: 20px;
+            text-indent: 15px;
+            white-space: wrap;
+            word-spacing: 10px;
+
+            font-variant: small-caps;
+            font-weight: 200;
+        }
+
+        #my-heading2 {
+            /* text-shadow: -2px -7px rgb(42, 141, 207); (x axis fwd) (y axis downward) */
+
+            /* text-shadow: 4px 4px 4px rgb(42, 141, 207); */
+
+            color: white;
+            text-shadow: 2px 2px 4px red, -2px -2px 4px blue;
+
+
         }
     </style>
 </head>
+
 <body>
     <h1 id="my-heading">ABC News</h1>
 
+
     Visit <a href="https://urdu.geo.tv/">Geo</a>
+
+    <p id="format">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus similique ex voluptate non atque possimus rem
+        temporibus magnam aspernatur cupiditate commodi maxime id quas eius, iusto neque exercitationem vel asperiores!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus similique ex voluptate non atque possimus rem
+        temporibus magnam aspernatur cupiditate commodi maxime id quas eius, iusto neque exercitationem vel asperiores!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus similique ex voluptate non atque possimus rem
+        temporibus magnam aspernatur cupiditate commodi maxime id quas eius, iusto neque exercitationem vel asperiores!
+    </p>
+
+    <h2 id="my-heading2">Hello World</h2>
+
+
 </body>
+
 </html>
